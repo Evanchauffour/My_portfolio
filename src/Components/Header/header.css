@@ -1,0 +1,40 @@
+header{
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    /* background-color: #f1f1f1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Poppins;
+}
+
+header nav a{
+    text-decoration: none;
+    padding-right: 30px;
+    margin-left: 60px;
+    color: #1E1E1E;
+}
+
+header .moon{
+    width: 40px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+header .moon:hover{
+   fill: #1E1E1E;
+}
+
+header .bg{
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.selected{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}

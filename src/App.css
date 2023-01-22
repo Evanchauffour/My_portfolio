@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #1E1E1E;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+main h1{
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #F1F1F1;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 70px;
+  display: inline-block;
+  margin: 0;
+}
+
+.app{
+  width: 100vw;
+}

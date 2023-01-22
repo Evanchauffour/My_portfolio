@@ -1,0 +1,17 @@
+.container-info_perso{
+    position: absolute;
+    top: 35%;
+    left: 60px;
+}
+
+.container-info_perso h1{
+    font-size: 100px;
+}
+
+.container-info_perso h2{
+    color: white;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 10;
+    margin: 0;
+}

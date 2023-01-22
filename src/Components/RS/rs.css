@@ -1,0 +1,11 @@
+.container-social{
+    position: absolute;
+    bottom: 30px;
+    margin-left: 60px;
+    display: flex;
+}
+
+.container-social img{
+    width: 40px;
+    padding-right: 10px;
+}
