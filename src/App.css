@@ -25,3 +25,7 @@ main h1{
 .app{
   width: 100vw;
 }
+
+main{
+  position: relative;
+}
