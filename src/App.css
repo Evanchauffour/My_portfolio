@@ -8,6 +8,7 @@ body{
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  cursor: none;
 }
 
 main h1{
@@ -17,13 +18,14 @@ main h1{
   color: #F1F1F1;
   font-family: Poppins;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 50px;
   display: inline-block;
   margin: 0;
 }
 
 .app{
   width: 100vw;
+  height: 100vh;
 }
 
 main{

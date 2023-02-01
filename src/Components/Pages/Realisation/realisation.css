@@ -1,3 +1,7 @@
+body{
+    overflow-y: scroll;
+}
+
 .container-realisation{
     position: absolute;
     top: 25%;
@@ -23,20 +27,20 @@
     margin-top: 80px;
     margin-right: 60px;
     flex-wrap: wrap;
-    overflow-y: scroll;
-    height: 400px;
+    height: auto;
 }
 
-.container-projets::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px; /* width of the entire scrollbar */
+    display: none;
 }
   
-.container-projets::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #D9D9D9; /* color of the tracking area */
     border-radius: 25px;
 }
   
-.container-projets::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #1E1E1E; /* color of the scroll thumb */
     border:solid #D9D9D9;
     border-radius: 25px;

@@ -1,6 +1,5 @@
 import './realisation.css'
 import Header from '../../Header/header'
-import RS from '../../RS/rs'
 import { motion } from "framer-motion"
 import Projet from './projet/projet'
 import infographie from './projet/img/infographie.PNG'
@@ -13,7 +12,7 @@ function Realisation(){
         <>
         <Header/>
         <main className='container-realisation'>
-            <motion.h1 initial={{y: -80, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.5}}>Realisations</motion.h1>
+            <motion.h1 initial={{y: -80, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.5}}>Realisation</motion.h1>
             <div className="container-projets">
                 <Projet name="Infographie" img={infographie}/>
                 <Projet name="Site Esport" img={esport}/>
@@ -21,7 +20,6 @@ function Realisation(){
                 <Projet name="Product page concept" img={productPage}/>
             </div>
         </main>
-        <RS/>
         </>
     )
 }

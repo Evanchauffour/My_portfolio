@@ -10,11 +10,54 @@ header{
 }
 
 header nav a{
+    position: relative;
     text-decoration: none;
     padding-right: 30px;
     margin-left: 60px;
     color: #1E1E1E;
 }
+
+header nav a::before{
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: calc(100% + 8px);
+    width: 0;
+    height: 2px;
+    background-color: #1E1E1E;
+    transition: all 0.5s ease;
+}
+
+/* header nav a::after{
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: calc(100% + 8px);
+    width: 0;
+    height: 2px;
+    background-color: #1E1E1E;
+    transition: all 0.5s ease;
+} */
+
+header nav a:hover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    width: calc(100% - 30px);
+    height: 2px;
+    background-color: #1E1E1E;
+}
+
+/* header nav a:hover::after{
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: calc(100% + 8px);
+    width: calc(100% - 30px);
+    height: 2px;
+    background-color: #1E1E1E;
+} */
 
 header .moon{
     width: 40px;
@@ -27,14 +70,19 @@ header .moon:hover{
 }
 
 header .bg{
-    height: 200px;
+    height: 170px;
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
 }
 
-.selected{
-    text-decoration: underline;
-    text-underline-offset: 8px;
+.selected::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    width: calc(100% - 30px);
+    height: 2px;
+    background-color: #1E1E1E;
 }
