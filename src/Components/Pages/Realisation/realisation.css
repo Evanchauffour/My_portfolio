@@ -45,3 +45,16 @@ body{
     border:solid #D9D9D9;
     border-radius: 25px;
 }
+
+.container-realisation a{
+    width: calc(50% - 100px);
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    font-family: Poppins;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #000000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

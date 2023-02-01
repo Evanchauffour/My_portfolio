@@ -7,8 +7,8 @@ import { useEffect, useState, useRef } from 'react';
 
 
 function Projet(props){
- 
     return(
+        <>
         <motion.div initial={{opacity:0 , y:100}} animate={{opacity:1 , y:0}} transition={{duration: 0.5, delay:0.5}} className="projet">
             <h2>{props.name}</h2>
             <motion.div initial={{x:100}} animate={{x:0}} transition={{duration: 0.5, delay:0.8}} className="technos">
@@ -18,6 +18,7 @@ function Projet(props){
             </motion.div>
                 <img src={props.img} alt="" className='bg-projet'/>
         </motion.div>
+        </>
     )
 }
 export default Projet
