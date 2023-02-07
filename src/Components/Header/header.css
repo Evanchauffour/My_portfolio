@@ -7,6 +7,11 @@ header{
     align-items: center;
     justify-content: space-between;
     font-family: Poppins;
+    z-index: 500;
+}
+
+.header-light nav a{
+    color: #f1f1f1;
 }
 
 header nav a{
@@ -28,36 +33,26 @@ header nav a::before{
     transition: all 0.5s ease;
 }
 
-/* header nav a::after{
+header nav a:hover::before{
+    left: 0;
+    width: calc(100% - 30px);
+}
+
+.header-light nav a::before{
     content: '';
     position: absolute;
     right: 30px;
     top: calc(100% + 8px);
     width: 0;
     height: 2px;
-    background-color: #1E1E1E;
+    background-color: #f1f1f1;
     transition: all 0.5s ease;
-} */
-
-header nav a:hover::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: calc(100% + 8px);
-    width: calc(100% - 30px);
-    height: 2px;
-    background-color: #1E1E1E;
 }
 
-/* header nav a:hover::after{
-    content: '';
-    position: absolute;
-    right: 30px;
-    top: calc(100% + 8px);
+.header-light nav a:hover::before{
+    left: 0;
     width: calc(100% - 30px);
-    height: 2px;
-    background-color: #1E1E1E;
-} */
+}
 
 header .moon{
     width: 40px;
@@ -77,7 +72,7 @@ header .bg{
     z-index: -1;
 }
 
-.selected::before{
+header .selected::before{
     content: '';
     position: absolute;
     left: 0;
@@ -85,4 +80,14 @@ header .bg{
     width: calc(100% - 30px);
     height: 2px;
     background-color: #1E1E1E;
+}
+
+.header-light .selected::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    width: calc(100% - 30px);
+    height: 2px;
+    background-color: #f1f1f1;
 }

@@ -65,12 +65,13 @@
 .cursor{
     position: absolute;
     border: solid #1E1E1E;
-    background-color: #D9D9D9;
+    background-color: #f1f1f1;
     font-size: 25px;
     border-radius: 50%;
     width: 20px;
     height: 20px;
     pointer-events: none;
+    z-index: 10000;
 }
 
 

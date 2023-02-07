@@ -4,12 +4,15 @@
     left: 60px;
 }
 
+.container-info_perso.light{
+    color: #1E1E1E;
+}
+
 .container-info_perso h1{
     font-size: 100px;
 }
 
 .container-info_perso h2{
-    color: white;
     font-family: Poppins;
     font-size: 30px;
     font-weight: 10;

@@ -2,9 +2,10 @@ import Header from '../../Header/header'
 import RS from '../../RS/rs'
 import './contact.css'
 import { motion } from "framer-motion"
-import React, { useRef , useState } from 'react';
+import React, { useRef , useState , useContext } from 'react';
 import emailjs from '@emailjs/browser';
 import { logDOM } from '@testing-library/react';
+import { DarkModeContext } from '../../../App';
 
 function Contact(){
   const form = useRef();
@@ -64,7 +65,7 @@ function Contact(){
       }, 10000);
   }
 
-
+  const {darkMode} = useContext(DarkModeContext)
     return(
         <>
         <Header/>

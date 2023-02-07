@@ -1,11 +1,13 @@
+import React from 'react';
 import './App.css';
 import{Routes, Route} from "react-router-dom"
 import Home from './Components/Pages/Home/home'
 import Contact from './Components/Pages/Contact/contact'
 import Realisation from './Components/Pages/Realisation/realisation'
-import { useRef } from 'react';
-import Projet from './Components/Pages/Realisation/projet/projet'
+import { useRef , useState } from 'react';
 import ProjetPage from './Components/Pages/ProjectPage/ProjectPage'
+
+export const DarkModeContext = React.createContext();
 
 function App() {
 
@@ -34,19 +36,25 @@ function App() {
       cursor.current.setAttribute('style', `top:${e.pageY - 10}px; left:${e.pageX - 10}px`)
   }
 
+  const [darkMode , setDarkMode] = useState(false);
+
+  const toogleDarkMode = () =>{
+      setDarkMode(!darkMode)
+  }
+
   return (
-    <div className='app' onMouseMove={mousePos}>
+    <DarkModeContext.Provider value={{darkMode , toogleDarkMode}}>
+    <div className={darkMode ? 'app-light' : 'app'} onMouseMove={mousePos}>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/realisation' element={<Realisation/>}></Route>
-        <Route path='/contact' element={<Contact/>}></Route>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/realisation' element={<Realisation/>}/>
+        <Route path='/contact' element={<Contact/>}/>
         <Route path="/project" component={ProjetPage} />
-        <Route path="/project/:id" element={<ProjetPage render={({ match }) => (
-          <ProjetPage Projet={projets.find(p => p.id === match.params.id)} />
-        )}/>}></Route>
+        <Route path="/project/:id" element={<ProjetPage value={projets.name}/>}/>
       </Routes>
       <div ref={cursor} className="cursor"></div>
     </div>
+    </DarkModeContext.Provider>
   );
 }
 
