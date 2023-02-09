@@ -12,6 +12,7 @@ header{
 
 .header-light nav a{
     color: #f1f1f1;
+    transition: all 0.5s ease;
 }
 
 header nav a{
@@ -58,10 +59,6 @@ header .moon{
     width: 40px;
     margin-right: 60px;
     cursor: pointer;
-}
-
-header .moon:hover{
-   fill: #1E1E1E;
 }
 
 header .bg{

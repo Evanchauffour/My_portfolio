@@ -4,7 +4,21 @@
     margin: 0 60px;
 }
 
+.container-contact-light{
+    position: absolute;
+    top: 25%;
+    margin: 0 60px;
+}
+
 .container-contact form{
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+    width: 80vw;
+    height: 30vh;
+}
+
+.container-contact-light form{
     margin-top: 80px;
     display: flex;
     gap: 80px;
@@ -18,7 +32,7 @@
     justify-content: space-between;
 }
 
-.container-contact form textarea, input:not(.button-form){
+.container-contact form textarea{
     background-color: transparent;
     border: none;
     border-bottom: solid 0.5px #F1F1F1;
@@ -30,8 +44,50 @@
     width: 30vw;
 }
 
+.container-contact form input:not(.button-form){
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 0.5px #F1F1F1;
+    color: #F1F1F1;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+    font-family: Poppins;
+    width: 30vw;
+}
+
+.container-contact-light form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 0.5px #1E1E1E;
+    color: #1E1E1E;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+    font-family: Poppins;
+    width: 30vw;
+}
+
+
+.container-contact-light form input:not(.button-form){
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 0.5px #1E1E1E;
+    color: #1E1E1E;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+    font-family: Poppins;
+    width: 30vw;
+}
+
 .container-contact form textarea{
     border-left: solid 0.5px #F1F1F1;
+    padding-left: 15px;
+}
+
+.container-contact-light form textarea{
+    border-left: solid 0.5px #1E1E1E;
     padding-left: 15px;
 }
 
@@ -90,4 +146,12 @@ textarea::placeholder{
 .modal-contact p{
     cursor: pointer;
     font-family: Poppins;
+}
+
+.container-contact-light ::placeholder{
+    color: #1E1E1E;
+}
+
+.container-contact ::placeholder{
+    color: #F1F1F1;
 }

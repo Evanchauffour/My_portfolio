@@ -37,13 +37,22 @@ function App() {
   }
 
   const [darkMode , setDarkMode] = useState(false);
+  const [cursorover , setCursorover] = useState(false);
 
   const toogleDarkMode = () =>{
       setDarkMode(!darkMode)
   }
 
+  const Mouseover = () =>{
+    setCursorover(true)
+  }
+
+  const Mouseleave = () =>{
+    setCursorover(false)
+  }
+
   return (
-    <DarkModeContext.Provider value={{darkMode , toogleDarkMode}}>
+    <DarkModeContext.Provider value={{darkMode , toogleDarkMode , Mouseover, Mouseleave}}>
     <div className={darkMode ? 'app-light' : 'app'} onMouseMove={mousePos}>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -52,7 +61,7 @@ function App() {
         <Route path="/project" component={ProjetPage} />
         <Route path="/project/:id" element={<ProjetPage value={projets.name}/>}/>
       </Routes>
-      <div ref={cursor} className="cursor"></div>
+      <div ref={cursor} className={cursorover ? 'cursor-over' : 'cursor'}></div>
     </div>
     </DarkModeContext.Provider>
   );

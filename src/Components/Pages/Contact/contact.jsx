@@ -69,9 +69,9 @@ function Contact(){
     return(
         <>
         <Header/>
-        <main className='container-contact'>
+        <main className={darkMode ? 'container-contact-light' : 'container-contact'}>
             <motion.h1 initial={{y: -80, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.5}}>Contact me</motion.h1>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} >
                 <div className='container-name-email'>
                 <motion.input ref={FirstName} initial={{y: -100, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.2}} type="text" name='FirstName' placeholder='First Name' />
                 <motion.input ref={LastName} initial={{y: 100, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.2, delay: 0.4}} type="text" name='LastName' placeholder='Last Name' />

@@ -1,10 +1,12 @@
 .projet{
     width: 100%;
     height: 100%;
+    box-shadow: 5px 5px 15px #000000;
+    border-radius: 25px;
 }
 
 .projet h2{
-    color: #1E1E1E;
+    color: #f1f1f1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,9 +15,13 @@
     font-weight: 200;
     transition: all 0.5s ease;
     padding: 5px;
-    border: solid 1px #1E1E1E;
-    background-color: #D9D9D9;
     text-align: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.app-light main h2:not(.title-projet){
+    color: #1E1E1E;
 }
 
 .technos{
@@ -30,6 +36,7 @@
 .technos img{
     width: 48px;
     padding: 10px;
+    z-index: 100;
 }
 
 .pres-projet{
@@ -50,8 +57,10 @@
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: -1;
-    filter: blur(5px);
-    transition: all 0.5s 0.2s ease;
+    filter: brightness(0.5);
+    transition: all 0.5s ease;
+    z-index: 1;
+    border-radius: 25px;
 }
 
 .projet:hover h2{
@@ -59,7 +68,7 @@
 }
 
 .projet:hover .bg-projet{
-    filter: blur(0);
+    filter: brightness(1);
 }
 
 .cursor{
@@ -72,6 +81,28 @@
     height: 20px;
     pointer-events: none;
     z-index: 10000;
+    transition: left 0.1s, top 0.1s, width 0.3s, height 0.3s;
+}
+
+.cursor-over{
+    position: absolute;
+    border: solid #1E1E1E;
+    background-color: #ffffff;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    z-index: 10000;
+    transition: left 0.1s, top 0.1s, width 0.3s, height 0.3s;
+}
+
+.cursor-over::before{
+    content: '+';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 
