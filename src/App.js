@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import{Routes, Route} from "react-router-dom"
+import{Routes, Route, Outlet} from "react-router-dom"
 import Home from './Components/Pages/Home/home'
 import Contact from './Components/Pages/Contact/contact'
 import Realisation from './Components/Pages/Realisation/realisation'
@@ -58,8 +58,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/realisation' element={<Realisation/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path="/project" component={ProjetPage} />
-        <Route path="/project/:id" element={<ProjetPage value={projets.name}/>}/>
+        <Route path="/projects" element={<ProjetPage/>} />
       </Routes>
       <div ref={cursor} className={cursorover ? 'cursor-over' : 'cursor'}></div>
     </div>

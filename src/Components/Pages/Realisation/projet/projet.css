@@ -20,10 +20,6 @@
     pointer-events: none;
 }
 
-.app-light main h2:not(.title-projet){
-    color: #1E1E1E;
-}
-
 .technos{
     position: absolute;
     right: 0;
@@ -95,6 +91,7 @@
     pointer-events: none;
     z-index: 10000;
     transition: left 0.1s, top 0.1s, width 0.3s, height 0.3s;
+    display: none;
 }
 
 .cursor-over::before{

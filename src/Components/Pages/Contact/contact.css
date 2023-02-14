@@ -128,6 +128,17 @@ textarea::placeholder{
     border: solid #F1F1F1;
 }
 
+.container-contact .modal-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #F1F1F1;
+    padding: 30px;
+}
+
 .modal-contact{
     display: flex;
     flex-direction: column;
@@ -138,14 +149,40 @@ textarea::placeholder{
     background-color: #F1F1F1;
     padding: 30px;
 }
+
+.modal-contact-light{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #1E1E1E;
+    padding: 30px;
+}
+
 .modal-contact h4{
     padding-bottom: 30px;
     font-family: Poppins;
+    color: #1E1E1E;
+}
+
+.modal-contact-light h4{
+    padding-bottom: 30px;
+    font-family: Poppins;
+    color: #F1F1F1;
 }
 
 .modal-contact p{
     cursor: pointer;
     font-family: Poppins;
+    color: #1E1E1E;
+}
+
+.modal-contact-light p{
+    cursor: pointer;
+    font-family: Poppins;
+    color: #F1F1F1;
 }
 
 .container-contact-light ::placeholder{
@@ -154,4 +191,8 @@ textarea::placeholder{
 
 .container-contact ::placeholder{
     color: #F1F1F1;
+}
+
+.red-placeholder::placeholder {
+    color: red;
 }

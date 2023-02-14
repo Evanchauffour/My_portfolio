@@ -41,7 +41,7 @@ main h1{
   color: #F1F1F1;
 }
 
-main h1:not(.container-info_perso h1)::after{
+main h1:not(.container-info_perso h1 , .container-project h1)::after{
   content: '';
   background-repeat: no-repeat;
   background-size: contain;
@@ -70,6 +70,6 @@ main h1:not(.container-info_perso h1)::after{
   transition: all 0.5s ease;
 }
 
-.app-light main h2{
+.app-light main h2:not(.projet h2){
   color: #1E1E1E;
 }

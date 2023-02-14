@@ -1,0 +1,230 @@
+.container-project{
+    position: absolute;
+    top: 25%;
+    width: 100vw;
+    display: flex;
+    height: 300vh;
+    background-color: #1E1E1E;
+}
+
+.container-project.light{
+    position: absolute;
+    top: 25%;
+    width: 100vw;
+    display: flex;
+    height: 300vh;
+    background-color: #dad7d7;
+}
+
+.container-project h1{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    text-transform: capitalize;
+    font-size: 80px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.container-project.light h1{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    text-transform: capitalize;
+    font-size: 80px;
+    transition: all 0.3s ease;
+    color: #1E1E1E;
+    white-space: nowrap;
+}
+
+.title-projet.close{
+    opacity: 0;
+}
+
+.container-project h1::after{
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 2px;
+    animation: underline-after 4s infinite ease;
+}
+
+.container-project.container-project.light h1::after{
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 2px;
+    animation: underline-after 6s infinite ease;
+}
+
+@keyframes underline-after {
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        left: 100%;
+        right: 0;
+        width: 0;
+    }
+}
+
+.description{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 25%;
+    padding: 15px;
+}
+
+.container-project .description p{
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container-project.light .description p{
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+#scroll-text{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#scroll-text.active{
+    opacity: 1;
+}
+
+.button-scroll{
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%);
+    transition: all 0.3s ease;
+}
+
+.button-scroll svg{
+    width: 40px;
+    height: 40px;
+}
+
+.container-project.light .button-scroll svg{
+    width: 40px;
+    height: 40px;
+    fill: #1E1E1E;
+}
+
+.img1{
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    width: 50%;
+    height: 400px;
+    opacity: 0.3;
+    filter: brightness(0.5);
+}
+
+.img2{
+    width: 50%;
+    height: 400px;
+    opacity: 0.5;
+    position: absolute;
+    top: 43%;
+    right: 5%;
+    opacity: 0.3;
+    filter: brightness(0.5);
+}
+
+.img3{
+    width: 50%;
+    height: 400px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    opacity: 0.3;
+    filter: brightness(0.5);
+}
+
+.container-project.light .img1{
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    width: 50%;
+    height: 400px;
+    opacity: 0.3;
+    filter: brightness(1);
+}
+
+.container-project.light .img2{
+    width: 50%;
+    height: 400px;
+    opacity: 0.5;
+    position: absolute;
+    top: 43%;
+    right: 5%;
+    opacity: 0.3;
+    filter: brightness(1);
+}
+
+.container-project.light .img3{
+    width: 50%;
+    height: 400px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    opacity: 0.3;
+    filter: brightness(1);
+}
+
+.visite{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    color: #f1f1f1;
+    border: solid #f1f1f1;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.container-project.light .visite{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    color: #1E1E1E;
+    border: solid #1E1E1E;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+
