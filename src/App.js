@@ -11,25 +11,6 @@ export const DarkModeContext = React.createContext();
 
 function App() {
 
-  const projets = [
-    {
-      id: 1,
-      name: "Infographie",
-    },
-    {
-      id: 2,
-      name: "Site Esport",
-    },
-    {
-      id: 3,
-      name: "Site Coco",
-    },
-    {
-      id: 4,
-      name: "Product page concept",
-    }
-  ];
-
   const cursor = useRef()
 
   const mousePos = (e) =>{
