@@ -55,9 +55,9 @@ function ProjetPage() {
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
               </svg>}
             </div>
-            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{amount: 1 }} transition={{ duration: 1 }} src={state.img1} alt="" className= 'img1' />
-            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{amount: 0.5 }} transition={{ duration: 1 }} src={state.img2} alt="" className= 'img2' />
-            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{amount: 0.5 }} transition={{ duration: 1 }} src={state.img3} alt="" className= 'img3' />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{amount: 1 }} transition={{ duration: 1 }} src={state.img1} alt="" className= 'img1 img' />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{amount: 0.5 }} transition={{ duration: 1 }} src={state.img2} alt="" className= 'img2 img' />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{amount: 0.5 }} transition={{ duration: 1 }} src={state.img3} alt="" className= 'img3 img' />
             <a className='visite' target="_blank" href={state.lien}>Visit website</a>
         </main>
       </>

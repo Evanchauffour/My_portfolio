@@ -145,6 +145,10 @@ const [fieldErrors, setFieldErrors] = useState({});
   </div>
 )}
         <RS/>
+        <div className={darkMode ? "tel-mail-light" : "tel-mail"}>
+          <a href="tel:+33471017">06 33 47 10 17</a>
+          <a href="mailto: evanchauffour@gmail.com">evanchauffour@gmail.com</a>
+        </div>
         </>
     )
 }

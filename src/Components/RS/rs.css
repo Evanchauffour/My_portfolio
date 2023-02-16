@@ -3,9 +3,19 @@
     bottom: 30px;
     margin-left: 60px;
     display: flex;
+    height: 40px;
 }
 
 .container-social img{
-    width: 40px;
-    padding-right: 10px;
+    padding-right: 5px;
+    height: 100%;
+}
+
+@media screen and (max-width:768px){
+    .container-social{
+        position: absolute;
+        bottom: 30px;
+        margin-left: 30px;
+        display: flex;
+    }
 }

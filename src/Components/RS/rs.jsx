@@ -14,9 +14,9 @@ function RS(){
 
     return(
         <div className='container-social'>
-            {!darkMode ? <a href=""><img src={insta} alt="" /></a> : <a href=""><img src={instaDark} alt="" /></a>}
-            {!darkMode ? <a href=""><img src={linkedin} alt="" /></a> : <a href=""><img src={linkedinDark} alt="" /></a>}
-            {!darkMode ? <a href=""><img src={github} alt="" /></a> : <a href=""><img src={githubDark} alt="" /></a>}
+            {!darkMode ? <a href="https://www.instagram.com/evan_chr/?hl=bg" target="_blank"><img src={insta} alt="" /></a> : <a href="https://www.instagram.com/evan_chr/?hl=bg" target="_blank"><img src={instaDark} alt="" /></a>}
+            {!darkMode ? <a href="https://www.linkedin.com/in/evan-chauffour/" target="_blank"><img src={linkedin} alt="" /></a> : <a href="https://www.linkedin.com/in/evan-chauffour/" target="_blank"><img src={linkedinDark} alt="" /></a>}
+            {!darkMode ? <a href="https://github.com/Evanchauffour" target="_blank"><img src={github} alt="" /></a> : <a href="https://github.com/Evanchauffour" target="_blank"><img src={githubDark} alt="" /></a>}
         </div>
     )
 }

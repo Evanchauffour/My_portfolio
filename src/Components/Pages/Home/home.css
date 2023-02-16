@@ -16,5 +16,180 @@
     font-family: Poppins;
     font-size: 30px;
     font-weight: 10;
+    margin-bottom: 30px;
+}
+
+.container-info_perso a{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 10;
     margin: 0;
+    text-decoration: none;
+    color: #f1f1f1;
+    border: solid #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.container-info_perso a:hover{
+    color: #1E1E1E;
+    background-color: #f1f1f1;
+}
+
+.container-info_perso.light a{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 10;
+    margin: 0;
+    text-decoration: none;
+    color: #1E1E1E;
+    border: solid #1E1E1E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+    .container-info_perso h1{
+        font-size: 80px;
+    }
+
+    .container-info_perso h2{
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 10;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .container-info_perso{
+        position: absolute;
+        top: 35%;
+        left: 30px;
+        width: 90vw;
+    }
+
+    .container-info_perso h1{
+        font-size: 80px;
+        line-height: 100%;
+    }
+
+    .container-info_perso h2{
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 10;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .container-info_perso a{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 10;
+        margin: 0;
+        text-decoration: none;
+        color: #f1f1f1;
+        border: solid #f1f1f1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .container-info_perso a:hover{
+        color: #1E1E1E;
+        background-color: #f1f1f1;
+    }
+
+    .container-info_perso.light a{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 10;
+        margin: 0;
+        text-decoration: none;
+        color: #1E1E1E;
+        border: solid #1E1E1E;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .container-info_perso.light a:hover{
+        color: #f1f1f1;
+        background-color: #1E1E1E;
+    }
+}
+
+@media screen and (max-width:425px){
+
+    .container-info_perso{
+        position: absolute;
+        top: 35%;
+        left: 30px;
+        width: 90vw;
+    }
+
+    .container-info_perso h1{
+        font-size: 60px;
+        line-height: 100%;
+    }
+
+    .container-info_perso h2{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 10;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .container-info_perso a{
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 10;
+        margin: 0;
+        text-decoration: none;
+        color: #f1f1f1;
+        border: solid #f1f1f1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .container-info_perso a:hover{
+        color: #1E1E1E;
+        background-color: #f1f1f1;
+    }
+
+    .container-info_perso.light a{
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 10;
+        margin: 0;
+        text-decoration: none;
+        color: #1E1E1E;
+        border: solid #1E1E1E;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .container-info_perso.light a:hover{
+        color: #f1f1f1;
+        background-color: #1E1E1E;
+    }
 }

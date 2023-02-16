@@ -5,6 +5,7 @@
     display: flex;
     height: 300vh;
     background-color: #1E1E1E;
+    overflow-x: hidden;
 }
 
 .container-project.light{
@@ -13,7 +14,7 @@
     width: 100vw;
     display: flex;
     height: 300vh;
-    background-color: #dad7d7;
+    background-color: #f1f1f1;
 }
 
 .container-project h1{
@@ -21,7 +22,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: 10000;
+    z-index: 100;
     text-transform: capitalize;
     font-size: 80px;
     transition: all 0.3s ease;
@@ -33,7 +34,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: 10000;
+    z-index: 100;
     text-transform: capitalize;
     font-size: 80px;
     transition: all 0.3s ease;
@@ -87,14 +88,16 @@
 
 .description{
     position: fixed;
-    top: 50%;
+    top: 15%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     width: 40%;
-    z-index: 1000;
-    background-color: rgb(0, 0, 0, 0.2);
-    border-radius: 25%;
-    padding: 15px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 25px;
+    padding: 30px;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .container-project .description p{
@@ -112,12 +115,7 @@
     font-size: 24px;
 }
 
-#scroll-text{
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-#scroll-text.active{
+.description.active{
     opacity: 1;
 }
 
@@ -140,19 +138,20 @@
     fill: #1E1E1E;
 }
 
+.img{
+    width: 50%;
+    height: 400px;
+}
+
 .img1{
     position: absolute;
     top: 13%;
     left: 5%;
-    width: 50%;
-    height: 400px;
     opacity: 0.3;
     filter: brightness(0.5);
 }
 
 .img2{
-    width: 50%;
-    height: 400px;
     opacity: 0.5;
     position: absolute;
     top: 43%;
@@ -162,8 +161,6 @@
 }
 
 .img3{
-    width: 50%;
-    height: 400px;
     opacity: 0.5;
     position: absolute;
     bottom: 10%;
@@ -176,15 +173,11 @@
     position: absolute;
     top: 13%;
     left: 5%;
-    width: 50%;
-    height: 400px;
     opacity: 0.3;
     filter: brightness(1);
 }
 
 .container-project.light .img2{
-    width: 50%;
-    height: 400px;
     opacity: 0.5;
     position: absolute;
     top: 43%;
@@ -194,8 +187,6 @@
 }
 
 .container-project.light .img3{
-    width: 50%;
-    height: 400px;
     opacity: 0.5;
     position: absolute;
     bottom: 10%;
@@ -213,7 +204,7 @@
     border: solid #f1f1f1;
     border-radius: 25px;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
 }
 
 .container-project.light .visite{
@@ -225,6 +216,165 @@
     border: solid #1E1E1E;
     border-radius: 25px;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
+}
+
+@media screen and (max-width:1024px){
+
+    .container-project{
+        height: 320vh;
+    }
+
+    .container-project h1{
+        font-size: 60px;
+    }
+    
+    .container-project.light h1{
+        font-size: 60px;
+    }
+    
+    .description{
+        position: fixed;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
+        z-index: 1000;
+        background-color: rgb(0, 0, 0, 0.4);
+        border-radius: 25px;
+        padding: 30px;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .img{
+        width: 70%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .container-project{
+        top: 30%;
+    }
+    
+    .container-project.light{
+        top: 30%;
+    }
+
+    .container-project h1{
+        font-size: 40px;
+    }
+    
+    .container-project.light h1{
+        font-size: 40px;
+    }
+    
+    .description{
+        position: fixed;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        z-index: 1000;
+        background-color: rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 30px;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .img{
+        width: 70%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .container-project{
+        height: 340vh;
+        top: 30%;
+    }
+    
+    .container-project.light{
+        top: 30%;
+        height: 340vh;
+    }
+
+    .container-project h1{
+        font-size: 40px;
+    }
+    
+    .container-project.light h1{
+        font-size: 40px;
+    }
+    
+    .description{
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+        z-index: 1000;
+        background-color: rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 30px;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .container-project .description p{
+        line-height: 30px;
+        font-size: 18px;
+    }
+    
+    .container-project.light .description p{
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .img{
+        width: 100%;
+        height: 230px;
+    }
+
+    .img1{
+        left: 0;
+    }
+    
+    .img2{
+        right: 0;
+    }
+    
+    .img3{
+        left: 0;
+    }
+
+    .container-project.light .img1{
+        left: 0;
+    }
+    
+    .container-project.light .img2{
+        right: 0;
+    }
+    
+    .container-project.light .img3{
+        left: 0;
+    }
+
+    .button-scroll{
+        bottom: 2%;
+    }    
+
+    .visite{
+        bottom: 3%;
+    }
+    
+    .container-project.light .visite{
+        bottom: 3%;
+    }
+    
 }
 

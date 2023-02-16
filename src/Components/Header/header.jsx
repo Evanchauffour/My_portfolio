@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import bg from './img/bg.svg'
 import bgDark from './img/bg-dark.svg'
-import { useContext } from 'react';
+import { useContext , useState } from 'react';
 import { DarkModeContext } from '../../App';
 
 function Header(){
@@ -11,9 +11,15 @@ function Header(){
 
     const {toogleDarkMode} = useContext(DarkModeContext)
     const {darkMode} = useContext(DarkModeContext)
+    const [burger , setBurger] = useState(false)
+
+    const handleClick = () =>{
+        setBurger(!burger)
+    }
 
     return(
-        <header className={darkMode ? 'header-light' : ''}>
+        <>
+        <header className={`${darkMode ? 'header-light' : ''} ${burger ? 'active' : ''}`}>
             <nav>
                 <Link to="/" className={location.pathname === '/' ? 'selected' : ''}>Home</Link>
                 <Link to="/realisation" className={location.pathname === '/realisation' ? 'selected' : ''}>Realisation</Link>
@@ -25,9 +31,14 @@ function Header(){
                 : <svg onClick={toogleDarkMode} className='moon' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
             </svg>}        
-
-            {darkMode ? <img src={bgDark} alt="" className='bg'/> : <img src={bg} alt="" className='bg'/>}
+            {/* {darkMode ? <img src={bgDark} alt="" className='bg'/> : <img src={bg} alt="" className='bg'/>} */}
         </header>
+        <div className={`${burger ? 'burger active' : 'burger'} ${darkMode ? 'light ' : ''}`} onClick={handleClick}>
+            <span className='line'></span>
+            <span className='line'></span>
+            <span className='line'></span>
+        </div>
+                </>
 
     )
 }

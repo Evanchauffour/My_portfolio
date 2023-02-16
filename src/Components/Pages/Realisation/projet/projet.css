@@ -80,26 +80,28 @@
     transition: left 0.1s, top 0.1s, width 0.3s, height 0.3s;
 }
 
-.cursor-over{
-    position: absolute;
-    border: solid #1E1E1E;
-    background-color: #ffffff;
-    font-size: 25px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    pointer-events: none;
-    z-index: 10000;
-    transition: left 0.1s, top 0.1s, width 0.3s, height 0.3s;
-    display: none;
+@media screen and (max-width:1024px) {
+    .projet h2{
+        font-size: 30px;
+        width: 60%;
+    }
 }
 
-.cursor-over::before{
-    content: '+';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+
+@media screen and (max-width:768px) {
+    .cursor{
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .technos img{
+        width: 38px;
+    }
+
+    .bg-projet{
+        border-radius: 15px;
+    }
 }
 
 
