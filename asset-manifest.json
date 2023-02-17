@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My_portfolio/static/css/main.f7fb64be.css",
-    "main.js": "/My_portfolio/static/js/main.75011fa2.js",
+    "main.css": "/My_portfolio/static/css/main.ce6689e1.css",
+    "main.js": "/My_portfolio/static/js/main.0691c878.js",
     "static/media/lcm1.png": "/My_portfolio/static/media/lcm1.f161a942810aea1f8444.png",
     "static/media/lcm2.png": "/My_portfolio/static/media/lcm2.aeabc478024d92312a39.png",
     "static/media/esport1.png": "/My_portfolio/static/media/esport1.790c718d3fd65d70d464.png",
@@ -14,21 +14,23 @@
     "static/media/lcm3.png": "/My_portfolio/static/media/lcm3.d40439e5662b846cf6f5.png",
     "static/media/productPage1.png": "/My_portfolio/static/media/productPage1.8e9779f54f2aad13a75f.png",
     "static/media/productPage2.png": "/My_portfolio/static/media/productPage2.a157e3a648b8d369d79e.png",
-    "static/media/github.svg": "/My_portfolio/static/media/github.86ba2d770ba625f6636c476d892f664c.svg",
-    "static/media/githubDark.svg": "/My_portfolio/static/media/githubDark.c5240dc746703e9fae7d9def6f52b05b.svg",
+    "static/media/php.svg": "/My_portfolio/static/media/php.a0d6ffbbe484456438b97e2a639a213f.svg",
+    "static/media/github.svg": "/My_portfolio/static/media/github.13e66b126e8082f8ec033c21b4252557.svg",
+    "static/media/githubDark.svg": "/My_portfolio/static/media/githubDark.011cbca21a45839c5f3c7cf52787fe08.svg",
     "index.html": "/My_portfolio/index.html",
     "static/media/js.svg": "/My_portfolio/static/media/js.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/linkedin.svg": "/My_portfolio/static/media/linkedin.bd7cea8416b5ed98efad377bc017c343.svg",
     "static/media/linkedinDark.svg": "/My_portfolio/static/media/linkedinDark.b2c1e9a50ec31a9bf39fb150dc2c7068.svg",
+    "static/media/wordpress.svg": "/My_portfolio/static/media/wordpress.f1d56c5b119528f74e4b4673d8818706.svg",
     "static/media/css.svg": "/My_portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/My_portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/bg.svg": "/My_portfolio/static/media/bg.e244f8e0fefdcd190f08024118faec7e.svg",
     "static/media/bg-dark.svg": "/My_portfolio/static/media/bg-dark.440def12e7a0ea8b79c05c31d0cc2f90.svg",
-    "main.f7fb64be.css.map": "/My_portfolio/static/css/main.f7fb64be.css.map",
-    "main.75011fa2.js.map": "/My_portfolio/static/js/main.75011fa2.js.map"
+    "main.ce6689e1.css.map": "/My_portfolio/static/css/main.ce6689e1.css.map",
+    "main.0691c878.js.map": "/My_portfolio/static/js/main.0691c878.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7fb64be.css",
-    "static/js/main.75011fa2.js"
+    "static/css/main.ce6689e1.css",
+    "static/js/main.0691c878.js"
   ]
 }
