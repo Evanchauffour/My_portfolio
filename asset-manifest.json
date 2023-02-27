@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/My_portfolio/static/css/main.7d93e5ed.css",
-    "main.js": "/My_portfolio/static/js/main.f6e72a8a.js",
-    "static/media/cooperez1.png": "/My_portfolio/static/media/cooperez1.70eaa4ab9798662096ad.png",
-    "static/media/lcm1.png": "/My_portfolio/static/media/lcm1.f161a942810aea1f8444.png",
-    "static/media/lcm2.png": "/My_portfolio/static/media/lcm2.aeabc478024d92312a39.png",
-    "static/media/esport1.png": "/My_portfolio/static/media/esport1.790c718d3fd65d70d464.png",
-    "static/media/infographie1.png": "/My_portfolio/static/media/infographie1.ced924165e7de360be9e.png",
-    "static/media/esport2.png": "/My_portfolio/static/media/esport2.c84a2bf016b5cb4403a1.png",
-    "static/media/infographie2.png": "/My_portfolio/static/media/infographie2.a1ba5754a862bad707bd.png",
-    "static/media/esport3.png": "/My_portfolio/static/media/esport3.5981e6fc52989c527403.png",
-    "static/media/infographie3.png": "/My_portfolio/static/media/infographie3.db6ccbf932a00a633ec8.png",
-    "static/media/productPage3.png": "/My_portfolio/static/media/productPage3.0ee5c4ff1d349e8aa74d.png",
-    "static/media/lcm3.png": "/My_portfolio/static/media/lcm3.d40439e5662b846cf6f5.png",
-    "static/media/cooperez2.png": "/My_portfolio/static/media/cooperez2.b5990bcd092b2f34c790.png",
-    "static/media/productPage1.png": "/My_portfolio/static/media/productPage1.8e9779f54f2aad13a75f.png",
-    "static/media/productPage2.png": "/My_portfolio/static/media/productPage2.a157e3a648b8d369d79e.png",
-    "static/media/cooperez3.png": "/My_portfolio/static/media/cooperez3.1619e397840b2cf7d830.png",
+    "main.js": "/My_portfolio/static/js/main.fb1379b3.js",
+    "static/media/lcm1.webp": "/My_portfolio/static/media/lcm1.271c3481d003ca8d67b6.webp",
+    "static/media/lcm2.webp": "/My_portfolio/static/media/lcm2.631c4eccd045f1f72bca.webp",
+    "static/media/infographie1.webp": "/My_portfolio/static/media/infographie1.71c66ee3c4bf6088b5c5.webp",
+    "static/media/esport2.webp": "/My_portfolio/static/media/esport2.206c55aa65e043e6941a.webp",
+    "static/media/infographie2.webp": "/My_portfolio/static/media/infographie2.cb98890b02ace02b7d65.webp",
+    "static/media/esport3.webp": "/My_portfolio/static/media/esport3.d8227d84a66f1cd77db5.webp",
+    "static/media/infographie3.webp": "/My_portfolio/static/media/infographie3.894efab9761daac8831e.webp",
+    "static/media/lcm3.webp": "/My_portfolio/static/media/lcm3.129067716995b129ce65.webp",
+    "static/media/cooperez3.webp": "/My_portfolio/static/media/cooperez3.d94c08f4883587030d09.webp",
+    "static/media/esport1.webp": "/My_portfolio/static/media/esport1.7f299f91fd17568e0d07.webp",
+    "static/media/cooperez1.webp": "/My_portfolio/static/media/cooperez1.34b8d63ec75ba2d2fbe0.webp",
+    "static/media/cooperez2.webp": "/My_portfolio/static/media/cooperez2.2053ddb1729285566419.webp",
+    "static/media/productPage3.webp": "/My_portfolio/static/media/productPage3.c1912f5d76e91ce48357.webp",
+    "static/media/productPage2.webp": "/My_portfolio/static/media/productPage2.ee42807dafb14562d532.webp",
+    "static/media/productPage1.webp": "/My_portfolio/static/media/productPage1.a6e0772a3b8e0a159ac5.webp",
     "static/media/php.svg": "/My_portfolio/static/media/php.a0d6ffbbe484456438b97e2a639a213f.svg",
     "static/media/github.svg": "/My_portfolio/static/media/github.13e66b126e8082f8ec033c21b4252557.svg",
     "static/media/githubDark.svg": "/My_portfolio/static/media/githubDark.011cbca21a45839c5f3c7cf52787fe08.svg",
@@ -28,10 +28,10 @@
     "static/media/css.svg": "/My_portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/My_portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.7d93e5ed.css.map": "/My_portfolio/static/css/main.7d93e5ed.css.map",
-    "main.f6e72a8a.js.map": "/My_portfolio/static/js/main.f6e72a8a.js.map"
+    "main.fb1379b3.js.map": "/My_portfolio/static/js/main.fb1379b3.js.map"
   },
   "entrypoints": [
     "static/css/main.7d93e5ed.css",
-    "static/js/main.f6e72a8a.js"
+    "static/js/main.fb1379b3.js"
   ]
 }
