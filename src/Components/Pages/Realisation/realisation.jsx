@@ -70,7 +70,7 @@ function Realisation(){
             <motion.h1 initial={{y: -80, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.5}}>Realisation</motion.h1>
             <div className="container-projets">
             {projets.map(projet => (
-          <Link to="/projects" state={projet}>
+          <Link to="/My_portfolio/projects" state={projet}>
             <>
             <Projet
               name={projet.name}
