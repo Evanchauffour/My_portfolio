@@ -36,10 +36,10 @@ function App() {
     <DarkModeContext.Provider value={{darkMode , toogleDarkMode , Mouseover, Mouseleave}}>
     <div className={darkMode ? 'app-light' : 'app'} onMouseMove={mousePos}>
       <Routes>
-        <Route path='My_portfolio/' element={<Home/>}/>
-        <Route path='My_portfolio/realisation' element={<Realisation/>}/>
-        <Route path='My_portfolio/contact' element={<Contact/>}/>
-        <Route path="My_portfolio/projects" element={<ProjetPage/>} />
+        <Route path='/' element={<Home/>}/>
+        <Route path='/realisation' element={<Realisation/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path="/projects" element={<ProjetPage/>} />
       </Routes>
       <div ref={cursor} className={cursorover ? 'cursor-over' : 'cursor'}></div>
     </div>
