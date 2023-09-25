@@ -2,10 +2,7 @@ import React from 'react';
 import './App.css';
 import{Routes, Route, Outlet} from "react-router-dom"
 import Home from './Components/Pages/Home/home'
-import Contact from './Components/Pages/Contact/contact'
-import Realisation from './Components/Pages/Realisation/realisation'
 import { useRef , useState } from 'react';
-import ProjetPage from './Components/Pages/ProjectPage/ProjectPage'
 
 export const DarkModeContext = React.createContext();
 
@@ -37,9 +34,6 @@ function App() {
     <div className={darkMode ? 'app-light' : 'app'} onMouseMove={mousePos}>
       <Routes>
         <Route path='/My_portfolio/' element={<Home/>}/>
-        <Route path='/My_portfolio/realisation' element={<Realisation/>}/>
-        <Route path='/My_portfolio/contact' element={<Contact/>}/>
-        <Route path="/My_portfolio/projects" element={<ProjetPage/>} />
       </Routes>
       <div ref={cursor} className={cursorover ? 'cursor-over' : 'cursor'}></div>
     </div>
